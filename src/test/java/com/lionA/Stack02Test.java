@@ -36,7 +36,6 @@ public class Stack02Test {
         st.push(20);
         assertEquals(20, st.pop());
         assertEquals(10, st.pop());
-        //before each 때문에 10과 20이 들어가있는상태라 값이 4개 있는 상태여서 에러가남.
 
         //st.pop() 비어 있을때는? 예외 검증
         //람다식...
