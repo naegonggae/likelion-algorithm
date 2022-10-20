@@ -7,7 +7,7 @@ public class Stack02 {
     private Integer[] arr;
     private int top = 0;
 
-    //스택 초기
+    //스택 초기화
     public Stack02() {
         this.arr = new Integer[10000];
     }
