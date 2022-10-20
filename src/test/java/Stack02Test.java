@@ -19,7 +19,6 @@ public class Stack02Test {
     }
 
     @Test
-    @DisplayName("push가 잘 되는지")
     void push() {
         st.push(10);
         st.push(20);
@@ -29,26 +28,22 @@ public class Stack02Test {
     }
 
     @Test
-    @DisplayName("pop이 잘되는지")
     void pop() {
         assertEquals(20, st.pop());
         assertEquals(10, st.pop());
 
-        // st.pop()이 비어있을땐?
-        // Exception의 검증 (모던 Java 표현)
+
         assertThrows(EmptyStackException.class,() -> {
             st.pop();
         });
     }
 
     @Test
-    @DisplayName("peek 확인")
     void peek() {
         assertEquals(20, st.peek());
     }
 
     @Test
-    @DisplayName("isEmpty 확인")
     void isEmpty() {
         assertFalse(st.isEmpty());
         st.pop();
