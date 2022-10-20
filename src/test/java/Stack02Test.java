@@ -61,6 +61,6 @@ public class Stack02Test {
         Stack<Integer> stack = new Stack<>();
         assertThrows(EmptyStackException.class, () -> {
             stack.pop();
-        });
+        });//
     }
 }

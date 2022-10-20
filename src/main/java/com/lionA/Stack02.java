@@ -36,7 +36,7 @@ public class Stack02 {
 
     public boolean isEmpty() {
         return this.top == 0 ? true : false;
-    }
+    }//
 
 
 }
